@@ -69,7 +69,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico" />
-<title>Welcome to Android | Android Open Source</title>
+<title>Bluetooth Process Diagram | Android Open Source</title>
 <link href="/assets/android-developer-docs-devguide.css" rel="stylesheet" type="text/css" />
 <!-- <link href="/assets-pdk/pdk-local.css" rel="stylesheet" type="text/css" /> -->
 <script src="/assets/search_autocomplete.js" type="text/javascript"></script>
@@ -113,7 +113,7 @@
       <div id="headerLeft">
           <a href="/" tabindex="-1"><img
               src="/assets/images/open_source.png" alt="Android Open Source Project" /></a>
-          <ul class="home">
+          <ul class="porting">
               <li id="home-link"><a href="/index.html"><span>Home</span></a></li>
               <li id="source-link"><a href="/source/index.html"
                                   onClick="return loadLast('source')"><span>Source</span></a></li>
@@ -140,6 +140,113 @@
 
   
     
+      
+  <div class="g-section g-tpl-240" id="body-content">
+    <div class="g-unit g-first side-nav-resizable" id="side-nav">
+      <div id="devdoc-nav"><script type="text/javascript" language="JavaScript">
+<!--
+function nothing() {}
+-->
+</script>
+
+<ul>
+
+<li> <h2>Setup and Building</h2>
+  <ul>
+     <li class="toggle-list">
+     <div><a href="/porting/build_system.html">Build System</a></div>
+     <ul>  
+       <li><a href="/porting/build_new_device.html">Configuring a New Product</a></li>
+       <li><a href="/porting/build_cookbook.html">Build Cookbook</a></li>
+     </ul>
+     </li>
+     <li><a href="/porting/release_keys.html">Release Keys and Signing Builds</a></li> 
+ </ul>
+</li>
+
+<li> <h2>Customization</h2>
+  <ul>
+    <li><a href="/porting/customization.html">Customization</a></li>
+    <li><a href="/porting/usersguide.html">Android User's Guide</a></li>
+  </ul>
+</li>
+
+<li> <h2>System</h2>
+
+<ul>
+  <li><a href="/porting/bring_up.html">Bring up</a></li>
+  <li class="toggle-list">
+    <div><a href="javascript:nothing()">Connectivity</a></div>
+    <ul> 
+      <li><a href="/porting/bluetooth.html">Bluetooth</a></li>
+      <li><a href="/porting/gps.html">GPS</a></li>
+      <li><a href="/porting/wifi.html">Wi-Fi</a></li>
+    </ul>
+  </li>
+
+  <li><a href="/porting/display_drivers.html">Display Drivers</a></li>
+  <li class="toggle-list"> 
+    <div><a href="javascript:nothing()">Input Devices</a></div>
+    <ul>
+      <li><a href="/porting/keymaps_keyboard_input.html">Keymaps and Keyboard</a></li>
+    </ul>
+  </li>
+  <li><a href="/porting/lights.html">Lights</a></li>
+  <li class="toggle-list">
+    <div><a href="javascript:nothing()">Multimedia</a></div>
+    <ul>
+      <li><a href="/porting/audio.html">Audio</a></li>
+      <li><a href="/porting/camera.html">Camera/Video</a></li>
+    </ul>
+  </li>
+  
+  <li><a href="/porting/power_management.html">Power Management</a></li>
+  <li><a href="/porting/sensors.html">Sensors</a></li>
+  <li class="toggle-list">
+    <div><a href="javascript:nothing()">Telephony</a></div>
+    <ul>
+      <li><a href="/porting/telephony.html">Radio Interface Layer</a></li>
+      <li><a href="/porting/stk.html">SIM Toolkit Application (STK)</a></li>
+    </ul>
+  </li>
+
+</ul>
+</li>
+
+<li> <h2>Dalvik Virtual Machine</h2>
+  <ul>
+    <li><a href="/porting/dalvik.html">Porting Dalvik</a></li>
+  </ul>
+</li>
+<li> <h2>Testing and Debugging</h2>
+  <ul>
+    <li><a href="/porting/instrumentation_testing.html">Instrumentation Testing</a></li>
+    <li><a href="/porting/debugging_gdb.html">Debugging with GDB</a></li>
+    <li><a href="/porting/debugging_native.html">Debugging Native Code</a></li>
+    <li><a href="/porting/tcpdump.html">Debugging with tcpdump</a></li>
+  </ul>
+</li>
+
+
+
+</ul>
+
+<script type="text/javascript">
+<!--
+    buildToggleLists();
+//-->
+</script>
+
+      </div>
+    </div> <!-- end side-nav -->
+    <script>
+      addLoadEvent(function() {
+        scrollIntoView("devdoc-nav");
+        });
+    </script>
+  </div>
+
+    
   
 
 
@@ -152,82 +259,14 @@
     &nbsp;
     
   </span>
-<h1 itemprop="name">Welcome to Android</h1>
+<h1 itemprop="name">Bluetooth Process Diagram</h1>
 </div>
 
   <div id="jd-content">
 
     <div class="jd-descr" itemprop="articleBody">
-    <div style="float: right; width: 35%;">
-<h3 style="padding-top: 0px;">News</h3>
-<p><b>Compatibility Definition for Android 2.3.3</b><br/>
-The Compatibility Definition Document for Android 2.3.3 has been published. 
-Android 2.3 allows device manufacturers to use the Android source code to ship
-a significantly wider variety of devices, including devices with extra-large
-screens, such as tablets. Android 2.3.3 adds enhanced Near-Field
-Communications support to the Android APIs.  For more information, <a
-href="/compatibility/index.html">visit the Compatibility page.</a>
-</p>
-<p><b>Source Code Available for Android 2.3</b><br/>
-The source code for the Android 2.3 platform and software stack has been
-released! This release allows OEMs to begin preparing Android 2.3 for
-installation on new and existing devices, and allows hobbyists, enthusiasts,
-and researchers to develop custom builds. For information on how to obtain the
-software, 
-<a href="/source/download.html">visit our 'Getting the Source' page.</a>
-</p>
-</div>
-<img style="float: right; padding-right: 1.5em;" src="/images/home-bugdroid.png" alt="Android Mascot"/>
-<div style="font-size: 1.3em;">
-  <p>Here you can find the information and source code you need to build an
-  Android-compatible device.</p>
-  <p>Android is an open-source software stack for mobile devices, and a
-  corresponding open-source project led by Google. We created Android in
-  response to our own experiences launching mobile apps. We wanted to make
-  sure that there was no central point of failure, so that no industry player
-  can restrict or control the innovations of any other.  That's why we
-  created Android, and made its source code open.</p>
-  <p><a href="/about/index.html">Learn more &raquo;</a></p>
-</div>
-
-<div style="clear: both;"/>
-
-<table border="0" style="border: 0px; margin: 0px; padding: 0px;"><tr><td align="center" style="border: 0px; margin: 0px; padding: 0px;">
-<div class="rebox lil" style="float: left; width: 30%; margin: 1em;"> 
-  <h2 style="color: white; background-color: #95C0D0; border: 0px;">Source</h2> 
-  <div class="p"> 
-    <p><img src="images/lil-wrench.png" alt="" style="margin: 1em; margin-bottom: 5em;"/>
-    If you're interested in contributing to the Android source code or helping
-    out with the open-source project, our Source pages have the information
-    you need.</p> 
-    <p><a href="/source/index.html">Get Involved &raquo;</a></p> 
-  </div> 
-</div> 
-
-<div class="rebox lil" style="float: left; width: 30%; margin: 1em;"> 
-  <h2 style="color: white; background-color: #95C0D0; border: 0px;">Porting</h2> 
-  <div class="p"> 
-    <p><img src="images/lil-wrench.png" alt="" style="margin: 1em; margin-bottom: 5em;"/>
-    If you're an engineer building a device
-    intended to run the Android software stack, look at our Porting pages for
-    information and tips.</p> 
-    <p><a href="/porting/index.html">Build a Device &raquo;</a></p> 
-  </div> 
-</div> 
-
-<div class="rebox lil" style="float: left; width: 30%; margin: 1em;"> 
-  <h2 style="color: white; background-color: #95C0D0; border: 0px;">Compatibility</h2> 
-  <div class="p"> 
-    <p><img src="images/lil-wrench.png" alt="" style="margin: 1em; margin-bottom: 5em;"/>
-    If you're an organization building an Android device, you'll want to check out our
-    Compatibility pages to find out how to take advantage of the benefits of
-    compatibility.</p> 
-    <p><a href="/compatibility/index.html">Get Compatible &raquo;</a></p> 
-  </div> 
-</div> 
-</td></tr></table>
-
-<div style="clear: both;"/>
+    <p>The diagram below offers a process-oriented architectural overview of Android's Bluetooth stack. Click <a href="../bluetooth.html">Bluetooth</a> to return to the Bluetooth overview page.</p>
+<img src="images/androidBluetoothProcessDiagram.jpg">
 
     </div>
 
