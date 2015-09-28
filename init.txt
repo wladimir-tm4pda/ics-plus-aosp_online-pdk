@@ -1,0 +1,2 @@
+repo init -u https://android.googlesource.com/platform/manifest -b ics-plus-aosp 2>&1 | tee -a sync.log
+date && date >> sync.log && /usr/bin/time -f "Total time: %E" repo sync -j8 2>&1 | tee -a sync.log && date >> sync.log && date

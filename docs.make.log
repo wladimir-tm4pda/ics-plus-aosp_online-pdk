@@ -1,0 +1,20 @@
+time make pdk pdk_all dist DIST_DIR=dist
+
+....
+target Dex: framework
+Copying: out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/noproguard.classes.dex
+target Jar: framework (out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/javalib.jar)
+ 'out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/classes.dex' as 'classes.dex'...
+Docs droiddoc: out/target/common/docs/online-pdk
+DroidDoc took 5 sec. to write docs to out/target/common/docs/online-pdk
+PDK: out/target/common/docs/app.yaml
+PDK docs: out/target/product/generic/obj/PACKAGING/pdkdocs_intermediates/android_pdk_docs--eng.wladimir_tm.20150928.105708.tar
+PDK docs: zipped out/target/product/generic/obj/PACKAGING/pdkdocs_intermediates/android_pdk_docs--eng.wladimir_tm.20150928.105708.tar
+Dist: dist/android_pdk_docs--eng.wladimir_tm.20150928.105708.tar.gz
+PDK: Docs tarred and zipped
+Package: pndk pdk_docs
+make: Nothing to be done for `dist'.
+
+real    6m39.859s
+user    9m31.470s
+sys     0m25.951s
